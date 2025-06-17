@@ -30,7 +30,7 @@ public class DeathManager : MonoBehaviour
     }
     IEnumerator LetPlayerLook()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(0);
     }
 }

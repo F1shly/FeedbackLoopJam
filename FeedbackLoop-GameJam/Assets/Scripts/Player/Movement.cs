@@ -152,7 +152,7 @@ public class Movement : MonoBehaviour
     public void Jumping()
     {
         //GroundCheck
-        RaycastHit2D hit = Physics2D.BoxCast(jumpRayCast.position, new Vector2(0.7f, 0.1f), 0, Vector2.zero, 0.0f, mask); //jumpRayCast.TransformDirection(Vector2.down)
+        RaycastHit2D hit = Physics2D.BoxCast(jumpRayCast.position, new Vector2(0.3f, 0.1f), 0, Vector2.zero, 0.0f, mask); //jumpRayCast.TransformDirection(Vector2.down)
         if (hit.collider != null)
         {
             anim.SetBool("Grounded", true);
@@ -164,7 +164,6 @@ public class Movement : MonoBehaviour
         {
             anim.SetBool("Grounded", false);
             canJump = false;
-            jumpBoxTrigger = true;
             trueAcceleration = acceleration * 0.6f;
             trueFriction = friction * 0.6f;
         }
@@ -216,7 +215,14 @@ public class Movement : MonoBehaviour
 
     public void SettingBoxTracker()
     {
-        if(canJump)
+        RaycastHit2D hit = Physics2D.Raycast(jumpRayCast.position, jumpRayCast.TransformDirection(Vector2.down), 0.1f, mask); //jumpRayCast.TransformDirection(Vector2.down)
+        {
+            if(hit.collider == null)
+            {
+                jumpBoxTrigger = true;
+            }
+        }
+        if (canJump)
         {
             if (!jumpBoxTrigger)
             {

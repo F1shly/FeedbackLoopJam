@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: fd96c47a256bb1840b0e136247bd1edc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 656969100192508530
+    second: BoxShatter_0
+  - first:
+      213: 8780825221370406661
+    second: BoxShatter_1
+  - first:
+      213: 3652101744751735222
+    second: BoxShatter_2
+  - first:
+      213: 2880774619746676582
+    second: BoxShatter_3
+  - first:
+      213: 1152694112977082257
+    second: BoxShatter_4
+  - first:
+      213: -6633394876912061963
+    second: BoxShatter_5
+  - first:
+      213: 5975373951397758809
+    second: BoxShatter_6
+  - first:
+      213: -6069911628426596874
+    second: BoxShatter_7
+  - first:
+      213: -8916471287182461824
+    second: BoxShatter_8
+  - first:
+      213: 1055803417203627567
+    second: BoxShatter_9
+  - first:
+      213: -5335850053734072874
+    second: BoxShatter_10
+  - first:
+      213: -4150997765256514505
+    second: BoxShatter_11
+  - first:
+      213: -3153613961922074526
+    second: BoxShatter_12
+  - first:
+      213: -2338451277831285886
+    second: BoxShatter_13
+  - first:
+      213: 3464731053254655231
+    second: BoxShatter_14
+  - first:
+      213: -1913484829604609641
+    second: BoxShatter_15
+  - first:
+      213: -695923623504734169
+    second: BoxShatter_16
+  - first:
+      213: -827295697825671189
+    second: BoxShatter_17
+  - first:
+      213: -3625121166516398043
+    second: BoxShatter_18
+  - first:
+      213: 4205038609327919534
+    second: BoxShatter_19
+  - first:
+      213: -876717384766963873
+    second: BoxShatter_20
+  - first:
+      213: -5486116634956738234
+    second: BoxShatter_21
+  - first:
+      213: -35286103650734468
+    second: BoxShatter_22
+  - first:
+      213: 6828967629389802996
+    second: BoxShatter_23
+  - first:
+      213: 6933569001398669828
+    second: BoxShatter_24
+  - first:
+      213: 1948912601872917256
+    second: BoxShatter_25
+  - first:
+      213: 2964279549759989483
+    second: BoxShatter_26
+  - first:
+      213: -8250533478463918073
+    second: BoxShatter_27
+  - first:
+      213: 1387468088796588359
+    second: BoxShatter_28
+  - first:
+      213: 7760381865965542376
+    second: BoxShatter_29
+  - first:
+      213: -7141830005934706733
+    second: BoxShatter_30
+  - first:
+      213: 4792549998135773865
+    second: BoxShatter_31
+  - first:
+      213: 161170039290899219
+    second: BoxShatter_32
+  - first:
+      213: -4214921231501954474
+    second: BoxShatter_33
+  - first:
+      213: -3214690507133579396
+    second: BoxShatter_34
+  - first:
+      213: -7512044741627749833
+    second: BoxShatter_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BoxShatter_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507e29a1402cbd970800000000000000
+      internalID: 8780825221370406661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxShatter_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f26ffe0419af720800000000000000
+      internalID: 2880774619746676582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxShatter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641da09bcf56dd3b0800000000000000
+      internalID: -5486116634956738234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxShatter_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56c22f90f9338b4db7120f30c54010e
+      internalID: 3652101744751735222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 748c91ea16536404f8231d78e5354a3f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BoxShatter_0: -5486116634956738234
+      BoxShatter_1: 8780825221370406661
+      BoxShatter_10: -5335850053734072874
+      BoxShatter_11: -4150997765256514505
+      BoxShatter_12: -3153613961922074526
+      BoxShatter_13: -2338451277831285886
+      BoxShatter_14: 3464731053254655231
+      BoxShatter_15: -1913484829604609641
+      BoxShatter_16: -695923623504734169
+      BoxShatter_17: -827295697825671189
+      BoxShatter_18: -3625121166516398043
+      BoxShatter_19: 4205038609327919534
+      BoxShatter_2: 3652101744751735222
+      BoxShatter_20: -876717384766963873
+      BoxShatter_22: -35286103650734468
+      BoxShatter_23: 6828967629389802996
+      BoxShatter_24: 6933569001398669828
+      BoxShatter_25: 1948912601872917256
+      BoxShatter_26: 2964279549759989483
+      BoxShatter_27: -8250533478463918073
+      BoxShatter_28: 1387468088796588359
+      BoxShatter_29: 7760381865965542376
+      BoxShatter_3: 2880774619746676582
+      BoxShatter_30: -7141830005934706733
+      BoxShatter_31: 4792549998135773865
+      BoxShatter_32: 161170039290899219
+      BoxShatter_33: -4214921231501954474
+      BoxShatter_34: -3214690507133579396
+      BoxShatter_35: -7512044741627749833
+      BoxShatter_4: 1152694112977082257
+      BoxShatter_5: -6633394876912061963
+      BoxShatter_6: 5975373951397758809
+      BoxShatter_7: -6069911628426596874
+      BoxShatter_8: -8916471287182461824
+      BoxShatter_9: 1055803417203627567
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -55,7 +55,7 @@ public class BoxCheckList : MonoBehaviour
         if(activated && playerInBox && !occupied)
         {
             timer += Time.deltaTime;
-            if (timer >= 2)
+            if (timer >= 1)
             {
                 activatedStay = true;
                 GetComponent<SpriteRenderer>().material = Stay;

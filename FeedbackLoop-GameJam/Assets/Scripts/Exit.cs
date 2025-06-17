@@ -12,6 +12,7 @@ public class Exit : MonoBehaviour
     public GameObject playerSprite;
     public int sceneNumber = 1;
     public GameObject[] lasers;
+    public GameObject[] OneTimeBoxSpawn;
     public GameObject counter,counter1, introTxt, guides;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,6 +22,7 @@ public class Exit : MonoBehaviour
             Player.GetComponent<Movement>().enabled = false;
             StartCoroutine(DelaySpriteVanish());
             lasers = GameObject.FindGameObjectsWithTag("LaserBeam");
+            OneTimeBoxSpawn = GameObject.FindGameObjectsWithTag("OneTimeBoxSpawn");
         }
     }
     public void DelayWin()
@@ -37,6 +39,11 @@ public class Exit : MonoBehaviour
         {
             LaserAwake laserAwake = item.GetComponent<LaserAwake>();
             laserAwake.ResetBeam();
+        }
+        foreach (var item in OneTimeBoxSpawn)
+        {
+            SpawnBox spawn = item.GetComponent<SpawnBox>();
+            spawn.OneSpawn();
         }
         counter.GetComponent<Counter>().NextNumber();
         counter1.GetComponent<Counter>().NextNumber();

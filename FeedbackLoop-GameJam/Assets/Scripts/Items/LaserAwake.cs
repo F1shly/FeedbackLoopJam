@@ -5,7 +5,7 @@ public class LaserAwake : MonoBehaviour
 {
     public bool horizontal;
 
-    public Transform laserBeam;
+    public Transform laserBeam, chargeBeam;
     public Transform laserEnd;
     public Transform laserStart;
     public LayerMask layer;
@@ -21,6 +21,8 @@ public class LaserAwake : MonoBehaviour
             float beamYPos = transform.position.y + (rayLength / 2) - 0.25f;
             laserBeam.position = new Vector2(transform.position.x, beamYPos);
             laserBeam.localScale = new Vector2(laserBeam.localScale.x, rayLength + 0.5f);
+            chargeBeam.position = new Vector2(transform.position.x, beamYPos);
+            chargeBeam.localScale = new Vector2(laserBeam.localScale.x, rayLength + 0.5f);
 
             float endYPos = transform.position.y + rayLength;
             laserEnd.position = new Vector2(transform.position.x, endYPos);
@@ -34,6 +36,8 @@ public class LaserAwake : MonoBehaviour
             float beamXPos = hit.point.x + (rayLength / 2);
             laserBeam.position = new Vector2(beamXPos, transform.position.y + 0.25f);
             laserBeam.localScale = new Vector2(rayLength, laserBeam.localScale.y);
+            chargeBeam.position = new Vector2(beamXPos, transform.position.y + 0.25f);
+            chargeBeam.localScale = new Vector2(rayLength, laserBeam.localScale.y);
 
             float startPosX = hit.point.x;
             laserStart.position = new Vector2(startPosX, transform.position.y + 0.25f);
@@ -55,6 +59,8 @@ public class LaserAwake : MonoBehaviour
             float beamYPos = transform.position.y + (rayLength / 2) - 0.25f;
             laserBeam.position = new Vector2(transform.position.x, beamYPos);
             laserBeam.localScale = new Vector2(laserBeam.localScale.x, rayLength + 0.5f);
+            chargeBeam.position = new Vector2(transform.position.x, beamYPos);
+            chargeBeam.localScale = new Vector2(laserBeam.localScale.x, rayLength + 0.5f);
 
             float endYPos = transform.position.y + rayLength;
             laserEnd.position = new Vector2(transform.position.x, endYPos);
@@ -67,6 +73,8 @@ public class LaserAwake : MonoBehaviour
             float beamXPos = laserEnd.position.x - (rayLength / 2);
             laserBeam.position = new Vector2(beamXPos, transform.position.y + 0.25f);
             laserBeam.localScale = new Vector2(rayLength, laserBeam.localScale.y);
+            chargeBeam.position = new Vector2(beamXPos, transform.position.y + 0.25f);
+            chargeBeam.localScale = new Vector2(rayLength, laserBeam.localScale.y);
 
             float endPosX = fullHit.point.x;
             laserStart.position = new Vector2(endPosX, transform.position.y + 0.25f);
@@ -74,7 +82,9 @@ public class LaserAwake : MonoBehaviour
     }
     IEnumerator LaserToggle()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.5f);
+        chargeBeam.gameObject.SetActive(!chargeBeam.gameObject.activeInHierarchy);
+        yield return new WaitForSeconds(0.5f);
         laserBeam.gameObject.SetActive(!laserBeam.gameObject.activeInHierarchy);
         StartCoroutine(LaserToggle());
     }

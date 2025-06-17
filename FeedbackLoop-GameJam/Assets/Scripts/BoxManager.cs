@@ -106,31 +106,35 @@ public class BoxManager : MonoBehaviour
     public void SetPlaceBox()
     {
         int randomNumber = Random.Range(0,10);
-        if(runFound)
+        int rangeRun = Random.Range(0, Runinventory.Length);
+        int rangeJump = Random.Range(0, JumpInventory.Length);
+        int rangeFall = Random.Range(0, FallInventory.Length);
+        int rangeStay = Random.Range(0, StayInventory.Length);
+        if (runFound)
         {
-            if (RunBlockGroup[randomNumber] != null)
-            { RunBlock = RunBlockGroup[randomNumber]; }
+            if (RunBlockGroup[rangeRun] != null)
+            { RunBlock = RunBlockGroup[rangeRun]; }
             else
             {RunBlock = RunBlockGroup[0]; }
         }
         if (jumpFound)
         {
-            if (JumpBlockGroup[randomNumber] != null)
-            { JumpBlock = JumpBlockGroup[randomNumber]; }
+            if (JumpBlockGroup[rangeJump] != null)
+            { JumpBlock = JumpBlockGroup[rangeJump]; }
             else
             { JumpBlock = JumpBlockGroup[0]; }
         }
         if (fallFound)
         {
-            if (FallBlockGroup[randomNumber] != null)
-            { FallBlock = FallBlockGroup[randomNumber]; }
+            if (FallBlockGroup[rangeFall] != null)
+            { FallBlock = FallBlockGroup[rangeFall]; }
             else
             { FallBlock = FallBlockGroup[0]; }
         }
         if (stayFound)
         {
-            if (StayBlockGroup[randomNumber] != null)
-            { StayBlock = StayBlockGroup[randomNumber]; }
+            if (StayBlockGroup[rangeStay] != null)
+            { StayBlock = StayBlockGroup[rangeStay]; }
             else
             { StayBlock = StayBlockGroup[0]; }
         }
