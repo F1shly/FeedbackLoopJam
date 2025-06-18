@@ -84,6 +84,14 @@ public class Movement : MonoBehaviour
             if (extraSpeed > 0)
                 extraSpeed = 0;
         }
+        if (extraSpeed >= maxSpeed * 2)
+        {
+            extraSpeed = maxSpeed;
+        }
+        if (extraSpeed <= -maxSpeed * 2)
+        {
+            extraSpeed = -maxSpeed;
+        }
     }
     public void Acceleration()
     {

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BoxManager : MonoBehaviour
 {
-    public GameObject[] GridBlock;
+    public GameObject[] GridBlock, AutoFillBlocks;
     public GameObject[] RunBlockGroup, JumpBlockGroup, FallBlockGroup, StayBlockGroup;
     public GameObject RunBlock, JumpBlock, FallBlock, StayBlock;
     public GameObject[] Runinventory, JumpInventory, FallInventory, StayInventory;
@@ -143,7 +143,20 @@ public class BoxManager : MonoBehaviour
     }
     public void PlaceBlock()
     {
-        if (!runFound && !jumpFound && !fallFound && !stayFound) { Debug.Log("NoBlocksFound"); return; }
+        if (!runFound && !jumpFound && !fallFound && !stayFound) 
+        {
+            for (int i = 0; i < AutoFillBlocks.Length; i++)
+            {
+                BoxCheckList checkList = GridBlock[i].GetComponent<BoxCheckList>();
+                if(!checkList.occupied)
+                {
+                    InventoryRandomiser = Random.Range(0, FallInventory.Length);
+                    Instantiate(FallInventory[InventoryRandomiser], AutoFillBlocks[i].transform);
+                    GridBlock[i].GetComponent<BoxCheckList>().occupied = true;
+                    Debug.Log("NoBlocksFound"); return;
+                }
+            }
+        } //place obj in autofill block (2 up from ground)
 
         switch (BlockRandomiser)
         {

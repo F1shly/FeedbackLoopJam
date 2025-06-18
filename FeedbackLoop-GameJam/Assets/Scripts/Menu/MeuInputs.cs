@@ -7,7 +7,7 @@ public class MeuInputs : MonoBehaviour
     public bool clicked;
     public bool canClick;
     public float clickTimer;
-    private float clickCooldown = 3f;
+    private float clickCooldown = 0.3f;
 
     private void OnEnable()
     {

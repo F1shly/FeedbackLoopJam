@@ -33,7 +33,7 @@ public class Music : MonoBehaviour
         // Switch to loop clip
         audioSource.clip = loopClip;
         audioSource.loop = true;
-        audioSource.volume = 0.01f;
+        audioSource.volume = 0.05f;
         audioSource.Play();
 
         //yield return StartCoroutine(FadeIn(audioSource, fadeDuration));
@@ -42,11 +42,11 @@ public class Music : MonoBehaviour
     private IEnumerator FadeIn(AudioSource source, float duration)
     {
         float startTime = Time.time;
-        while (source.volume < 0.01f)
+        while (source.volume < 0.05f)
         {
-            source.volume = Mathf.Clamp01((Time.time - startTime) / duration) * 0.01f;
+            source.volume = Mathf.Clamp01((Time.time - startTime) / duration) * 0.05f;
             yield return null;
         }
-        source.volume = 0.01f;
+        source.volume = 0.05f;
     }
 }

@@ -5636,7 +5636,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b5c95b143d4cc954abd3d585e174c3c6, type: 3}
   m_Resource: {fileID: 8300000, guid: b5c95b143d4cc954abd3d585e174c3c6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8133,6 +8133,7 @@ MonoBehaviour:
   IntroObj: {fileID: 0}
   ProgressTracker: 0
   MenuDisplay: 1
+  topScore: 0
 --- !u!212 &1224666270
 SpriteRenderer:
   m_ObjectHideFlags: 0

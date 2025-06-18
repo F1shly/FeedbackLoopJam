@@ -21,7 +21,7 @@ public class SpawnBox : MonoBehaviour
     {
         if(spawnedBox == null)
         {
-            Instantiate(box, transform.position, transform.rotation);
+            spawnedBox = Instantiate(box, transform.position, transform.rotation);
         }
     }
     IEnumerator SpawnDelay()

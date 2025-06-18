@@ -43,6 +43,13 @@ public class FallingBox : MonoBehaviour
             .First(clip => clip.name == animationName).length;
 
         yield return new WaitForSeconds(length);
-        Destroy(gameObject);
+        if(Static)
+        {
+            Destroy(transform.parent.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }

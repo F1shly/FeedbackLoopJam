@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5411493208860842491}
   - component: {fileID: 1220135154985589765}
   - component: {fileID: 8834766641809466074}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,13 +45,13 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a2410e1c9da3e0e40a9f0b38599eefc9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 10240
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -79,7 +79,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.84, y: 1.05}
+  m_Size: {x: 0.84, y: 0.95}
   m_EdgeRadius: 0
 --- !u!50 &1220135154985589765
 Rigidbody2D:
@@ -103,7 +103,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 10240
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 952894967031152483}
   - component: {fileID: 3827109947238188480}
   - component: {fileID: 2190698024844920247}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BoxShatter_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
