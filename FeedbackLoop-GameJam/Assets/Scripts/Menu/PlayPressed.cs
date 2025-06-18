@@ -6,6 +6,7 @@ public class PlayPressed : MonoBehaviour
 {
     public GameObject Actived, Inactived;
     public AudioSource audioSource;
+    public bool spacePressed;
     public void Hovered()
     {
         Actived.SetActive(true);
@@ -13,8 +14,11 @@ public class PlayPressed : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Actived.SetActive(false);
-        Inactived.SetActive(true);
+        if(!spacePressed)
+        {
+            Actived.SetActive(false);
+            Inactived.SetActive(true);
+        }
     }
     public void Clicked()
     { 

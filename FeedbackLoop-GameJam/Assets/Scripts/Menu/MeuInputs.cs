@@ -8,6 +8,9 @@ public class MeuInputs : MonoBehaviour
     public bool canClick;
     public float clickTimer;
     private float clickCooldown = 0.3f;
+    public bool spacePressed;
+
+    public GameObject playButton;
 
     private void OnEnable()
     {
@@ -15,6 +18,7 @@ public class MeuInputs : MonoBehaviour
         {
             inputSystems = new InputSystem_Menu();
             inputSystems.UI.Click.performed += i => clicked = i.ReadValueAsButton();
+            inputSystems.Player.Jump.performed += i => spacePressed = i.ReadValueAsButton();
         }
         inputSystems.Enable();
     }
@@ -26,6 +30,14 @@ public class MeuInputs : MonoBehaviour
 
     private void Update()
     {
+        if(spacePressed && canClick)
+        {
+            canClick = false;
+            clickTimer = clickCooldown;
+            playButton.GetComponent<PlayPressed>().Clicked();
+            playButton.GetComponent<PlayPressed>().spacePressed = true;
+            playButton.GetComponent<PlayPressed>().Hovered();
+        }
         if(clicked && canClick)
         {
             canClick = false;
