@@ -5,6 +5,7 @@ using System.Collections;
 public class DeathManager : MonoBehaviour
 {
     public GameObject Player;
+    public GameObject DeathSprtie;
     public SpriteRenderer PlayerSprite;
     public Material deathMat;
 
@@ -20,6 +21,7 @@ public class DeathManager : MonoBehaviour
         PlayerSprite.material = deathMat;
         Player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
         Player.GetComponent<Movement>().enabled = false;
+        DeathSprtie.SetActive(true);
 
         drop.dropScreen = true;
         drop.Died = true;

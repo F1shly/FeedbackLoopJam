@@ -30,7 +30,7 @@ public class MeuInputs : MonoBehaviour
 
     private void Update()
     {
-        if(spacePressed && canClick)
+        if (spacePressed && canClick)
         {
             canClick = false;
             clickTimer = clickCooldown;
