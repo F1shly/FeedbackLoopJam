@@ -7,6 +7,7 @@ public class FallingBox : MonoBehaviour
     public bool Static;
     public Animator animator;
     float duration = 1f;
+    public GameObject DeathHitbox;
     private void Awake()
     {
         if(!Static)
@@ -23,7 +24,7 @@ public class FallingBox : MonoBehaviour
             transform.localScale = new Vector2(scaleFactor, scaleFactor);
             yield return null;
         }
-
+        DeathHitbox.SetActive(true);
         transform.localScale = new Vector2(1, 1);
         GetComponent<Rigidbody2D>().AddForce(Vector2.down, ForceMode2D.Impulse);
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;

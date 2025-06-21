@@ -27,6 +27,7 @@ public class DeathManager : MonoBehaviour
         drop.Died = true;
 
         Counter.SetActive(true);
+        Counter.GetComponent<Counter>().OnPlayerDeath();
 
         StartCoroutine(LetPlayerLook());
     }

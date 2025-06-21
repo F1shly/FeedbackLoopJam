@@ -168,7 +168,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 80
+  m_SortingOrder: 82
   m_Sprite: {fileID: -5486116634956738234, guid: fd96c47a256bb1840b0e136247bd1edc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -325,4 +325,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Static: 0
   animator: {fileID: 6189524980024259277}
+  DeathHitbox: {fileID: 122841601442727328}
   animationName: BoxShatter

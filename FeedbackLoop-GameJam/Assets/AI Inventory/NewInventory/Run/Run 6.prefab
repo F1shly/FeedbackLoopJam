@@ -841,6 +841,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5226858403987640684}
     - target: {fileID: 3621517210118262467, guid: 52a41db6724f1714eb572fe02d48c1e6, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3621517210118262467, guid: 52a41db6724f1714eb572fe02d48c1e6, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3621517210118262467, guid: 52a41db6724f1714eb572fe02d48c1e6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3621517210118262467, guid: 52a41db6724f1714eb572fe02d48c1e6, type: 3}
       propertyPath: m_SortingOrder
       value: 79
       objectReference: {fileID: 0}
@@ -871,6 +883,18 @@ PrefabInstance:
     - target: {fileID: 5065635894200574186, guid: 52a41db6724f1714eb572fe02d48c1e6, type: 3}
       propertyPath: m_Name
       value: Laser
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527273170389928210, guid: 52a41db6724f1714eb572fe02d48c1e6, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527273170389928210, guid: 52a41db6724f1714eb572fe02d48c1e6, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527273170389928210, guid: 52a41db6724f1714eb572fe02d48c1e6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6527273170389928210, guid: 52a41db6724f1714eb572fe02d48c1e6, type: 3}
       propertyPath: m_SortingOrder
