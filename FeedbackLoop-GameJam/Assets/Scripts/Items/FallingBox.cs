@@ -33,6 +33,7 @@ public class FallingBox : MonoBehaviour
     {
         Debug.Log(collision.gameObject.name);
         animator.enabled = true;
+        DeathHitbox.SetActive(false);
         StartCoroutine(WaitAndDestroy());
     }
 
