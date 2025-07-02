@@ -55,6 +55,10 @@ public class MeuInputs : MonoBehaviour
                 {
                     hit.collider.gameObject.GetComponent<ExitPressed>().Clicked();
                 }
+                if (hit.collider.gameObject.GetComponent<DemoPressed>() != null)
+                {
+                    hit.collider.gameObject.GetComponent<DemoPressed>().Clicked();
+                }
             }
         }
         else

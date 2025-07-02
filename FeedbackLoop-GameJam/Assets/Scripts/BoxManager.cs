@@ -105,11 +105,10 @@ public class BoxManager : MonoBehaviour
 
     public void SetPlaceBox()
     {
-        int randomNumber = Random.Range(0,10);
-        int rangeRun = Random.Range(0, Runinventory.Length);
-        int rangeJump = Random.Range(0, JumpInventory.Length);
-        int rangeFall = Random.Range(0, FallInventory.Length);
-        int rangeStay = Random.Range(0, StayInventory.Length);
+        int rangeRun = Random.Range(0, RunBlockGroup.Length);
+        int rangeJump = Random.Range(0, JumpBlockGroup.Length);
+        int rangeFall = Random.Range(0, FallBlockGroup.Length);
+        int rangeStay = Random.Range(0, StayBlockGroup.Length);
         if (runFound)
         {
             if (RunBlockGroup[rangeRun] != null)
