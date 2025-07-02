@@ -409,6 +409,17 @@
                 },
                 {
                     "name": "",
+                    "id": "0b73fa81-aa76-4672-b4d4-0ce938210a51",
+                    "path": "<HID::PowerA NSW wired controller>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "1534dc16-a6aa-499d-9c3a-22b47347b52a",
                     "path": "<Keyboard>/1",
                     "interactions": "",
